@@ -1,17 +1,19 @@
 package br.com.estudandoemcasa;
 
+import br.com.estudandoemcasa.interfaces.Imposto;
+import br.com.estudandoemcasa.interfaces.impl.ImpostoICMSImpl;
+import br.com.estudandoemcasa.interfaces.impl.ImpostoISSImpl;
+import br.com.estudandoemcasa.interfaces.impl.ImpostoNullImpl;
+import br.com.estudandoemcasa.modelo.Orcamento;
+import lombok.AllArgsConstructor;
+
 import java.math.BigDecimal;
 
-import br.com.estudandoemcasa.interfaces.impl.ImpostoISSImpl;
-import br.com.estudandoemcasa.modelo.Orcamento;
+@AllArgsConstructor
+public class CalculoImposto  {
 
-public class CalculoImposto  { 
-	
-	public CalculoImposto() {
-		// TODO document why this constructor is empty
+	public BigDecimal calcula(Orcamento orcamento) {
+		Imposto imp = new ImpostoISSImpl(new ImpostoICMSImpl(new ImpostoNullImpl()));
+		return imp.calcula(orcamento);
 	}
-
-	public BigDecimal calcula(Orcamento orcamento, ImpostoISSImpl imposto) {
-		return imposto.calcula(orcamento);
-	}	
 }

@@ -3,8 +3,11 @@ package br.com.estudandoemcasa.interfaces;
 import java.math.BigDecimal;
 
 import br.com.estudandoemcasa.modelo.Orcamento;
+import lombok.AllArgsConstructor;
 
-public interface Imposto { 
-	
-	public BigDecimal calcula(Orcamento orcamento);
+@AllArgsConstructor
+public abstract class Imposto {
+
+	protected Imposto proximoImposto;
+	public abstract BigDecimal calcula(Orcamento orcamento);
 }

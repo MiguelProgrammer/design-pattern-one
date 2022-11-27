@@ -12,19 +12,13 @@ import java.util.Optional;
 
 @Getter
 @Setter
-public class ImpostoISSImpl extends Imposto {
+public class ImpostoNullImpl extends Imposto {
 
-	public ImpostoISSImpl(Imposto proximoImposto) {
-		super(proximoImposto);
+	public ImpostoNullImpl() {
+		super(null);
 	}
-
 	@Override
 	public BigDecimal calcula(Orcamento orcamento) {
-		if(orcamento.getValor().compareTo(new BigDecimal("500")) > 0){
-			return orcamento.getValor().multiply(BigDecimal.valueOf(0.1));
-		}
-
-		return proximoImposto.calcula(orcamento);
+		return BigDecimal.ZERO;
 	}
-
 }
