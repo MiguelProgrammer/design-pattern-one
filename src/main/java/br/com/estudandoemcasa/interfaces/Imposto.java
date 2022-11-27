@@ -1,4 +1,4 @@
-package br.com.estudandoemcasa.servico.interfaces;
+package br.com.estudandoemcasa.interfaces;
 
 import java.math.BigDecimal;
 
@@ -6,5 +6,5 @@ import br.com.estudandoemcasa.modelo.Orcamento;
 
 public interface Imposto { 
 	
-	BigDecimal calcula(Orcamento orcamento); 
+	public BigDecimal calcula(Orcamento orcamento);
 }

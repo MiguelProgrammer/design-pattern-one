@@ -1,11 +1,11 @@
-package br.com.estudandoemcasa.servico.impl;
+package br.com.estudandoemcasa.interfaces.impl;
 
 import java.math.BigDecimal;
 
+import br.com.estudandoemcasa.interfaces.Imposto;
 import br.com.estudandoemcasa.modelo.Orcamento;
-import br.com.estudandoemcasa.servico.interfaces.Imposto;
 
-public class ImpostoICMSImpl implements Imposto { 
+class ImpostoICMSImpl implements Imposto {
 	
 	public ImpostoICMSImpl() {
 	}
