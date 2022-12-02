@@ -14,6 +14,6 @@ public class CalculoImposto  {
 
 	public BigDecimal calcula(Orcamento orcamento) {
 		Imposto imp = new ImpostoISSImpl(new ImpostoICMSImpl(new ImpostoNullImpl()));
-		return imp.calcula(orcamento);
+		return imp.calculadoraFinanceira(orcamento);
 	}
 }

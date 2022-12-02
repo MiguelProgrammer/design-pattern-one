@@ -9,5 +9,12 @@ import lombok.AllArgsConstructor;
 public abstract class Imposto {
 
 	protected Imposto proximoImposto;
-	public abstract BigDecimal calcula(Orcamento orcamento);
+	public BigDecimal calculadoraFinanceira(Orcamento orcamento){
+		if(Boolean.TRUE.equals(aplicaDesconto(orcamento))){
+			return calcula(orcamento);
+		}
+		return this.proximoImposto.calcula(orcamento);
+	}
+	protected abstract BigDecimal calcula(Orcamento orcamento);
+	protected abstract Boolean aplicaDesconto(Orcamento orcamento);
 }

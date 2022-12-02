@@ -21,7 +21,12 @@ public class ImpostoNullImpl extends Imposto {
 	}
 	@Override
 	public BigDecimal calcula(Orcamento orcamento) {
-		log.info("test");
+		log.info("Imposto NullImpl");
 		return BigDecimal.ZERO;
+	}
+
+	@Override
+	public Boolean aplicaDesconto(Orcamento orcamento) {
+		return true;
 	}
 }
