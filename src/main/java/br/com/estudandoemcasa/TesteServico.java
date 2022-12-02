@@ -2,17 +2,16 @@ package br.com.estudandoemcasa;
 
 import br.com.estudandoemcasa.modelo.Orcamento;
 import lombok.Getter;
+import lombok.extern.java.Log;
 
 import java.math.BigDecimal;
 
+@Log
 @Getter
 public class TesteServico {
-
     public static void main(String[] args) {
 
-        Orcamento orcamento = new Orcamento(new BigDecimal("500"));
         CalculoImposto calculoImposto = new CalculoImposto();
-
-        System.out.println(calculoImposto.calcula(orcamento));
+        log.info("Result: " + calculoImposto.calcula(new Orcamento(new BigDecimal("500"))));
     }
 }

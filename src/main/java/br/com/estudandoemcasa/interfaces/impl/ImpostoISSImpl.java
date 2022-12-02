@@ -17,6 +17,7 @@ public class ImpostoISSImpl extends Imposto {
     public ImpostoISSImpl(Imposto proximoImposto) {
         super(proximoImposto);
     }
+
     @Override
     public BigDecimal calcula(Orcamento orcamento) {
         log.info("Imposto ISSImpl");

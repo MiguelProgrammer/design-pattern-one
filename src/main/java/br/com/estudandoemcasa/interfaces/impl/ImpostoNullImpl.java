@@ -13,7 +13,6 @@ import java.math.BigDecimal;
 @Setter
 @Log
 public class ImpostoNullImpl extends Imposto {
-
 	public ImpostoNullImpl() {
 		super(null);
 	}

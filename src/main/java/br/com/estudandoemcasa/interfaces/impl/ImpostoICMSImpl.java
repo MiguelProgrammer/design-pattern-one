@@ -21,6 +21,7 @@ public class ImpostoICMSImpl extends Imposto {
         log.info("Imposto ICMSI");
         return orcamento.getValor().multiply(BigDecimal.valueOf(0.05));
     }
+
     @Override
     public Boolean aplicaDesconto(Orcamento orcamento) {
         return orcamento.getValor().compareTo(new BigDecimal("400")) > 0;
