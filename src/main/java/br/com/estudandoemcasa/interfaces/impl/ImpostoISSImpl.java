@@ -14,18 +14,17 @@ import java.math.BigDecimal;
 @Log
 public class ImpostoISSImpl extends Imposto {
 
-	public ImpostoISSImpl(Imposto proximoImposto) {
-		super(proximoImposto);
-	}
-
-	@Override
-	public BigDecimal calcula(Orcamento orcamento) {
-		log.info("test");
-		if(orcamento.getValor().compareTo(new BigDecimal("500")) > 0){
-			return orcamento.getValor().multiply(BigDecimal.valueOf(0.1));
-		}
-
-		return proximoImposto.calcula(orcamento);
-	}
+    public ImpostoISSImpl(Imposto proximoImposto) {
+        super(proximoImposto);
+    }
+    @Override
+    public BigDecimal calcula(Orcamento orcamento) {
+        log.info("Imposto ISSImpl");
+        return orcamento.getValor().multiply(BigDecimal.valueOf(0.1));
+    }
+    @Override
+    public Boolean aplicaDesconto(Orcamento orcamento) {
+        return orcamento.getValor().compareTo(new BigDecimal("500")) > 0;
+    }
 
 }

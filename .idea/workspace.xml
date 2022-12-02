@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ffef36c0-0ed5-4034-b7ea-57e17c0990e3" name="Changes" comment="">
+    <list default="true" id="ffef36c0-0ed5-4034-b7ea-57e17c0990e3" name="Changes" comment="Fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/estudandoemcasa/TesteServico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/estudandoemcasa/TesteServico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/estudandoemcasa/interfaces/Imposto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/estudandoemcasa/interfaces/Imposto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/estudandoemcasa/interfaces/impl/ImpostoICMSImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/estudandoemcasa/interfaces/impl/ImpostoICMSImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/estudandoemcasa/interfaces/impl/ImpostoISSImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/estudandoemcasa/interfaces/impl/ImpostoISSImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/estudandoemcasa/interfaces/impl/ImpostoNullImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/estudandoemcasa/interfaces/impl/ImpostoNullImpl.java" afterDir="false" />
@@ -36,13 +37,14 @@
     <option name="showLibraryContents" value="true" />
     <option name="sortByType" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="br.com.estudandoemcasa.interfaces.impl" />
@@ -91,6 +93,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
