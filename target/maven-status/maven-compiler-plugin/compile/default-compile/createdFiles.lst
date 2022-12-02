@@ -1,7 +1,0 @@
-br\com\estudandoemcasa\CalculoImposto.class
-br\com\estudandoemcasa\modelo\Orcamento.class
-br\com\estudandoemcasa\interfaces\impl\ImpostoISSImpl.class
-br\com\estudandoemcasa\interfaces\Imposto.class
-br\com\estudandoemcasa\interfaces\impl\ImpostoNullImpl.class
-br\com\estudandoemcasa\TesteServico.class
-br\com\estudandoemcasa\interfaces\impl\ImpostoICMSImpl.class
