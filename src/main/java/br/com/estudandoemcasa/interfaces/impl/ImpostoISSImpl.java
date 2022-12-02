@@ -3,15 +3,15 @@ package br.com.estudandoemcasa.interfaces.impl;
 
 import br.com.estudandoemcasa.interfaces.Imposto;
 import br.com.estudandoemcasa.modelo.Orcamento;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.extern.java.Log;
 
 import java.math.BigDecimal;
-import java.util.Optional;
 
 @Getter
 @Setter
+@Log
 public class ImpostoISSImpl extends Imposto {
 
 	public ImpostoISSImpl(Imposto proximoImposto) {
@@ -20,6 +20,7 @@ public class ImpostoISSImpl extends Imposto {
 
 	@Override
 	public BigDecimal calcula(Orcamento orcamento) {
+		log.info("test");
 		if(orcamento.getValor().compareTo(new BigDecimal("500")) > 0){
 			return orcamento.getValor().multiply(BigDecimal.valueOf(0.1));
 		}

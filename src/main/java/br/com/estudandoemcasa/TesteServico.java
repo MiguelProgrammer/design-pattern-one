@@ -13,7 +13,7 @@ public class TesteServico {
 
 	public static void main(String[] args) {
 
-		Orcamento orcamento = new Orcamento(new BigDecimal("500"));
+		Orcamento orcamento = new Orcamento(new BigDecimal("0"));
 		CalculoImposto calculoImposto = new CalculoImposto();
 
 		System.out.println(calculoImposto.calcula(orcamento));

@@ -6,12 +6,14 @@ import br.com.estudandoemcasa.modelo.Orcamento;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.extern.java.Log;
 
 import java.math.BigDecimal;
 import java.util.Optional;
 
 @Getter
 @Setter
+@Log
 public class ImpostoNullImpl extends Imposto {
 
 	public ImpostoNullImpl() {
@@ -19,6 +21,7 @@ public class ImpostoNullImpl extends Imposto {
 	}
 	@Override
 	public BigDecimal calcula(Orcamento orcamento) {
+		log.info("test");
 		return BigDecimal.ZERO;
 	}
 }
