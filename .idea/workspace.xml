@@ -6,11 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="ffef36c0-0ed5-4034-b7ea-57e17c0990e3" name="Changes" comment="Fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/estudandoemcasa/CalculoImposto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/estudandoemcasa/CalculoImposto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/estudandoemcasa/TesteServico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/estudandoemcasa/TesteServico.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/estudandoemcasa/interfaces/Imposto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/estudandoemcasa/interfaces/Imposto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/estudandoemcasa/interfaces/impl/ImpostoICMSImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/estudandoemcasa/interfaces/impl/ImpostoICMSImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/estudandoemcasa/interfaces/impl/ImpostoISSImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/estudandoemcasa/interfaces/impl/ImpostoISSImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/estudandoemcasa/interfaces/impl/ImpostoNullImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/estudandoemcasa/interfaces/impl/ImpostoNullImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/estudandoemcasa/modelo/Orcamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/estudandoemcasa/modelo/Orcamento.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
